@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acne Scar Treatment - National Skin Care Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #A02745;
+            --secondary: #F9B2A0;
+            --accent: #B7772A;
+            --neutral: #F2E8DE;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--neutral);
+        }
+
+        .gradient-primary {
+            background: linear-gradient(135deg, #A02745 0%, #B7772A 100%);
+        }
+
+        .gradient-secondary {
+            background: linear-gradient(135deg, #F9B2A0 0%, #B7772A 100%);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(160, 39, 69, 0.2);
+        }
+
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(160, 39, 69, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #A02745 0%, #B7772A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <div class="w-16 h-16 gradient-primary overflow-hidden rounded-full">
+                        <img class="w-full h-full object-cover" src="images/logo1.jpg" alt="">
+                    </div>
+                    <span class="text-xl font-bold gradient-text">National Skin Care</span>
+                </div>
+                <div class="hidden md:flex gap-8">
+                    <a href="#home" class="text-gray-700 hover:text-red-600 transition">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-red-600 transition">Services</a>
+                    <a href="#contact" class="text-gray-700 hover:text-red-600 transition">Contact</a>
+                </div>
+                <a href="index.html" class="px-6 py-2 rounded-lg flex gap-1 text-white transition"
+                    style="background-color: #A02745;"><i class="ri-arrow-left-long-line"></i> Back</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 gradient-text">Acne Scar Treatment</h1>
+                    <p class="text-xl text-gray-600 mb-8">Restore your skin's smooth texture with our advanced scar
+                        removal treatments. Say goodbye to acne scars and hello to confidence.</p>
+                    <div class="flex gap-4">
+                        <a href="#services"
+                            class="px-4 py-3 rounded-lg font-semibold border-2 transition hover:shadow-lg"
+                            style="border-color: #F9B2A0; color: #A02745;">Learn More</a>
+                        <a href="#contact"
+                            class="px-8 py-3 rounded-lg text-center text-white font-semibold transition hover:shadow-lg"
+                            style="background-color: #A02745;">Book Consultation</a>
+
+                    </div>
+                </div>
+                <div class="w-full h-96 lg:h-[70vh] rounded-2xl overflow-hidden"
+                    style="background: linear-gradient(135deg, #A02745 0%, #B7772A 100%);">
+                    <img class="w-full h-full object-cover object-top"
+                        src="https://i.pinimg.com/736x/77/1c/74/771c74f70b5665a3eafa12077affd341.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4 gradient-text">Why Choose Our Service</h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Advanced scar removal techniques to restore
+                smooth, clear skin and boost your confidence.</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-effect p-8 rounded-2xl hover-lift">
+                    <div class="w-16 h-16 rounded-lg mb-4 flex items-center justify-center"
+                        style="background: linear-gradient(135deg, #A02745 0%, #F9B2A0 100%);">
+                        <i class="ri-tools-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Multiple Techniques</h3>
+                    <p class="text-gray-600">Laser, microdermabrasion, and chemical peels for optimal results.</p>
+                </div>
+
+                <div class="glass-effect p-8 rounded-2xl hover-lift">
+                    <div class="w-16 h-16 rounded-lg mb-4 flex items-center justify-center"
+                        style="background: linear-gradient(135deg, #F9B2A0 0%, #B7772A 100%);">
+                        <i class="ri-eye-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Visible Improvement</h3>
+                    <p class="text-gray-600">Noticeable reduction in scar appearance after each session.</p>
+                </div>
+
+                <div class="glass-effect p-8 rounded-2xl hover-lift">
+                    <div class="w-16 h-16 rounded-lg mb-4 flex items-center justify-center"
+                        style="background: linear-gradient(135deg, #B7772A 0%, #A02745 100%);">
+                        <i class="ri-speed-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Minimal Downtime</h3>
+                    <p class="text-gray-600">Quick recovery with minimal disruption to your daily life.</p>
+                </div>
+
+                <div class="glass-effect p-8 rounded-2xl hover-lift">
+                    <div class="w-16 h-16 rounded-lg mb-4 flex items-center justify-center"
+                        style="background: linear-gradient(135deg, #A02745 0%, #F9B2A0 100%);">
+                        <i class="ri-layout-grid-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Customized Plans</h3>
+                    <p class="text-gray-600">Treatment tailored to your specific scar type and depth.</p>
+                </div>
+
+                <div class="glass-effect p-8 rounded-2xl hover-lift">
+                    <div class="w-16 h-16 rounded-lg mb-4 flex items-center justify-center"
+                        style="background: linear-gradient(135deg, #F9B2A0 0%, #B7772A 100%);">
+                        <i class="ri-check-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Long-lasting Results</h3>
+                    <p class="text-gray-600">Permanent improvement in skin texture and appearance.</p>
+                </div>
+
+                <div class="glass-effect p-8 rounded-2xl hover-lift">
+                    <div class="w-16 h-16 rounded-lg mb-4 flex items-center justify-center"
+                        style="background: linear-gradient(135deg, #B7772A 0%, #F9B2A0 100%);">
+                        <i class="ri-team-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Expert Care</h3>
+                    <p class="text-gray-600">Experienced dermatologists with proven track record.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 gradient-secondary">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 text-white">Get in Touch</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-white flex items-center justify-center flex-shrink-0">
+                                <i class="ri-map-pin-line text-2xl" style="color: #A02745;"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white mb-1">Location</h3>
+                                <p class="text-white/80">Radha Swamy Colony, Bowenpally, Secunderabad, Telangana 500009</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-white flex items-center justify-center flex-shrink-0">
+                                <i class="ri-phone-line text-2xl" style="color: #A02745;"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white mb-1">Phone</h3>
+                                <p class="text-white/80">+91 99129 85875</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-white flex items-center justify-center flex-shrink-0">
+                                <i class="ri-mail-line text-2xl" style="color: #A02745;"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white mb-1">Email</h3>
+                                <p class="text-white/80">info@nationalskincare.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">Book Your Appointment</h3>
+                    <form onsubmit="handleWhatsAppSubmit(event)" class="space-y-4">
+                        <input type="text" id="name" placeholder="Your Name"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-red-400"
+                            required>
+                        <input type="email" id="email" placeholder="Your Email"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-red-400"
+                            required>
+                        <textarea id="message" placeholder="Message" rows="4"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-red-400"></textarea>
+                        <button type="submit"
+                            class="w-full py-3 rounded-lg text-white font-semibold transition hover:shadow-lg flex items-center justify-center gap-2"
+                            style="background-color: #A02745;">
+                            <i class="ri-whatsapp-line"></i>
+                            Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold mb-4">About Us</h4>
+                    <p class="text-gray-400 text-sm">National Skin Care Center - Premium skincare services under Dr.
+                        Radhika's expert care.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li><a href="#" class="hover:text-red-400 transition">Laser Hair Removal</a></li>
+                        <li><a href="#" class="hover:text-red-400 transition">Acne Treatment</a></li>
+                        <li><a href="#" class="hover:text-red-400 transition">Anti-Aging</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li><a href="#" class="hover:text-red-400 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-red-400 transition">Services</a></li>
+                        <li><a href="#" class="hover:text-red-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+               <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/nationalskincentrehyderabad/"
+                            class="w-10 h-10 rounded-lg flex items-center justify-center hover:opacity-80 transition"
+                            style="background-color: #A02745;">
+                            <i class="ri-facebook-fill text-white"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nationalskincentre/"
+                            class="w-10 h-10 rounded-lg flex items-center justify-center hover:opacity-80 transition"
+                            style="background-color: #A02745;">
+                            <i class="ri-instagram-fill text-white"></i>
+                        </a>
+                     
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 National Skin Care Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleWhatsAppSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const whatsappMessage = `Hello, I would like to book an appointment.\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappURL = `https://wa.me/919912985875?text=${encodedMessage}`;
+
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+
+</html>

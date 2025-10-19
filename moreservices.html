@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>More Services | National Skin Center</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --primary: #9b1b3b;
+      --on-primary: #ffffff;
+      --accent-peach: #f6e3db;
+      --neutral-900: #111827;
+      --neutral-600: #6b7280;
+      --neutral-50: #ffffff;
+      --ring: 2px;
+    }
+
+    /* Tailwind arbitrary values use our tokens, e.g. bg-[var(--primary)] */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .focus-ring {
+      outline: var(--ring) solid color-mix(in oklab, var(--primary) 80%, white);
+      outline-offset: 2px;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 280ms ease-out both;
+    }
+
+    @keyframes slide-down {
+      from {
+        opacity: 0;
+        transform: translateY(-6px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-slide-down {
+      animation: slide-down 240ms ease-out both;
+    }
+  </style>
+</head>
+
+<body class="min-h-dvh bg-[var(--neutral-50)] text-[var(--neutral-900)] antialiased">
+  <header class="sticky top-0 z-50 bg-[var(--neutral-50)]/90 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 md:px-6">
+      <div class="flex h-16 items-center justify-between">
+
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-4 focus-ring group" aria-label="Clinic home">
+          <img src="images/logo1.jpg" alt="Logo 1" class="h-12 w-auto object-contain rounded-full" />
+          <img src="images/logo2.jpg" alt="Logo 2" class="h-12 w-auto object-contain rounded-full" />
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="/"
+            class="text-sm text-[var(--neutral-600)] hover:text-[var(--neutral-900)] transition-colors">Home</a>
+          <a href="/moreservices.html"
+            class="text-sm text-[var(--neutral-600)] hover:text-[var(--neutral-900)] transition-colors">Services</a>
+          <a href="#contact"
+            class="text-sm text-[var(--neutral-600)] hover:text-[var(--neutral-900)] transition-colors">Contact</a>
+          <a href="https://wa.me/919912985875?text=Hello%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+            class="inline-flex items-center rounded-md bg-[var(--primary)] px-3 py-2 text-sm font-medium text-[var(--on-primary)] hover:opacity-90 transition"
+            target="_blank" rel="noopener">WhatsApp</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn"
+          class="md:hidden inline-flex items-center justify-center rounded-md p-2 hover:bg-[var(--accent-peach)]/50 transition"
+          aria-controls="mobileMenu" aria-expanded="false">
+          <span class="sr-only">Open menu</span>
+          <svg class="h-6 w-6 text-[var(--neutral-900)]" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+      class="hidden md:hidden border-t border-[color:color-mix(in oklab,var(--neutral-900) 10%,transparent)] bg-[var(--neutral-50)] animate-slide-down">
+      <div class="mx-auto max-w-7xl px-4 py-3 flex flex-col gap-2">
+        <a href="/" class="py-2 text-[var(--neutral-900)] hover:text-[var(--primary)]">Home</a>
+        <a href="/moreservices.html" class="py-2 text-[var(--neutral-900)] hover:text-[var(--primary)]">Services</a>
+        <a href="#contact" class="py-2 text-[var(--neutral-900)] hover:text-[var(--primary)]">Contact</a>
+        <a href="https://wa.me/919912985875?text=Hello%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+          class="mt-2 inline-flex items-center justify-center rounded-md bg-[var(--primary)] px-3 py-2 text-sm font-medium text-[var(--on-primary)] hover:opacity-90 transition"
+          target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div class="mx-auto max-w-7xl px-4 md:px-6 py-10 md:py-14">
+        <div class="grid items-center gap-8 md:grid-cols-2">
+          <div>
+            <p class="text-xs uppercase tracking-widest text-[var(--primary)] font-medium">Care. Confidence. Clarity.
+            </p>
+            <h1 class="mt-2 text-pretty text-3xl font-bold md:text-4xl">Explore Our Advanced Skin, Hair & Aesthetic
+              Services</h1>
+            <p class="mt-3 text-[var(--neutral-600)]">
+            </p>
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+              <a href="#services"
+                class="inline-flex items-center rounded-md bg-[var(--primary)] px-4 py-2.5 text-[var(--on-primary)] font-medium hover:opacity-90 transition">Browse
+                Services</a>
+              <a href="https://wa.me/919912985875?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment."
+                target="_blank" rel="noopener"
+                class="inline-flex items-center rounded-md border border-[var(--primary)] px-4 py-2.5 text-[var(--primary)] font-medium hover:bg-[var(--accent-peach)]/60 transition">Book
+                on WhatsApp</a>
+            </div>
+          </div>
+          <figure class="relative">
+            <img src="https://i.pinimg.com/736x/3f/cb/28/3fcb28d60b5655cd132d5c63429da772.jpg" alt="List of services offered at the clinic"
+              class="w-full rounded-lg border border-[color:color-mix(in oklab,var(--neutral-900) 10%,transparent)] shadow-sm" />
+            <figcaption class="mt-2 text-xs text-[var(--neutral-600)]">Snapshot of our service catalogue</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="border-t border-[color:color-mix(in oklab,var(--neutral-900) 10%,transparent)]">
+      <div class="mx-auto max-w-7xl px-4 md:px-6 py-10 md:py-14">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold">All Services</h2>
+            <p class="mt-1 text-[var(--neutral-600)]">Click a card to view complete details below.</p>
+          </div>
+          <div class="hidden sm:flex gap-2">
+            <button id="clearSelection"
+              class="rounded-md border border-[color:color-mix(in oklab,var(--neutral-900) 10%,transparent)] px-3 py-2 text-sm hover:bg-[var(--accent-peach)]/60 transition">Clear
+              selection</button>
+          </div>
+        </div>
+
+        <div id="servicesGrid" class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4"></div>
+      </div>
+    </section>
+
+    <section id="detailsSection"
+      class="hidden border-t border-[color:color-mix(in oklab,var(--neutral-900) 10%,transparent)] bg-[var(--accent-peach)]/40">
+      <div class="mx-auto max-w-5xl px-4 md:px-6 py-10 md:py-12">
+        <div id="detailsCard"
+          class="rounded-lg border border-[color:color-mix(in oklab,var(--neutral-900) 12%,transparent)] bg-[var(--neutral-50)] p-5 md:p-8 shadow-sm animate-fade-in">
+          <div class="flex flex-col md:flex-row gap-6">
+            <img id="detailImage" alt=""
+              class="h-44 w-full md:w-56 rounded-md object-cover border border-[color:color-mix(in oklab,var(--neutral-900) 10%,transparent)]"
+              src="/placeholder.svg?height=176&width=224" />
+            <div class="flex-1">
+              <p class="text-xs uppercase tracking-wider text-[var(--primary)] font-semibold">Service</p>
+              <h3 id="detailTitle" class="mt-1 text-2xl font-bold">Select a service</h3>
+              <p id="detailDesc" class="mt-2 text-[var(--neutral-600)]">
+                Click on any service card above to load full details here.
+              </p>
+              <ul id="detailPoints" class="mt-4 grid gap-2 text-sm text-[var(--neutral-900)] list-disc pl-5"></ul>
+              <div class="mt-6 flex flex-wrap items-center gap-3">
+                <a id="waCta" href="https://wa.me/919912985875" target="_blank" rel="noopener"
+                  class="inline-flex items-center rounded-md bg-[var(--primary)] px-4 py-2.5 text-[var(--on-primary)] font-medium hover:opacity-90 transition">Enquire
+                  on WhatsApp</a>
+                <button id="backToGrid"
+                  class="inline-flex items-center rounded-md border border-[var(--primary)] px-4 py-2.5 text-[var(--primary)] font-medium hover:bg-[var(--accent-peach)]/60 transition">Back
+                  to services</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="sr-only" aria-hidden="true"></section>
+  </main>
+
+  <a href="https://wa.me/919912985875?text=Hello%2C%20I%27m%20interested%20in%20your%20services."
+    class="fixed bottom-5 right-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[var(--primary)] text-[var(--on-primary)] shadow-lg hover:scale-105 transition"
+    target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path
+        d="M20.52 3.48A11.89 11.89 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.06 1.51 5.77L0 24l6.38-1.49A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.29-6.1-3.48-8.16ZM12 22a9.92 9.92 0 0 1-5.06-1.39l-.36-.21-3.78.88.81-3.69-.23-.38A9.94 9.94 0 1 1 12 22Zm5.68-7.46c-.31-.16-1.83-.9-2.11-1-.28-.11-.48-.16-.68.16-.2.31-.78 1-.96 1.21-.18.2-.35.23-.66.08-.31-.16-1.32-.49-2.52-1.57-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.36.45-.54.15-.18.2-.31.31-.52.11-.2.06-.39-.02-.54-.08-.16-.68-1.64-.93-2.25-.24-.58-.49-.5-.68-.51l-.58-.01c-.2 0-.52.07-.79.39-.27.31-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.08.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.83-.75 2.09-1.48.26-.73.26-1.36.18-1.48-.08-.12-.29-.2-.6-.36Z" />
+    </svg>
+  </a>
+
+      <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold mb-4">About Us</h4>
+                    <p class="text-gray-400 text-sm">National Skin Care Center - Premium skincare services under Dr.
+                        Radhika's expert care.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li><a href="#" class="hover:text-red-400 transition">Laser Hair Removal</a></li>
+                        <li><a href="#" class="hover:text-red-400 transition">Acne Treatment</a></li>
+                        <li><a href="#" class="hover:text-red-400 transition">Anti-Aging</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li><a href="#" class="hover:text-red-400 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-red-400 transition">Services</a></li>
+                        <li><a href="#" class="hover:text-red-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                    <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/nationalskincentrehyderabad/"
+                            class="w-10 h-10 rounded-lg flex items-center justify-center hover:opacity-80 transition"
+                            style="background-color: #A02745;">
+                            <i class="ri-facebook-fill text-white"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nationalskincentre/"
+                            class="w-10 h-10 rounded-lg flex items-center justify-center hover:opacity-80 transition"
+                            style="background-color: #A02745;">
+                            <i class="ri-instagram-fill text-white"></i>
+                        </a>
+                     
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 National Skin Care Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+  <script>
+    
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!expanded));
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+
+  // Services data
+  const SERVICES = [
+    "Acne Scars Treatment",
+    "Skin Lightening & Pigmentation",
+    "Warts & Moles Removal",
+    "Anti Aging Treatment",
+    "Carbon Facial Laser Toning",
+    "Laser Hair Removal",
+    "Skin Tightening Radio Frequency",
+    "Non Surgical Face Lift",
+    "Hydra Facial",
+    "PRP Treatment",
+    "Dark Circle Treatment",
+    "Non Surgical Nose Correction",
+    "Botox & Fillers",
+    "Facial Contouring",
+    "Ear Lobe Repair",
+    "Thread Lift",
+    "Double Chin Treatment",
+    "Face Slimming Treatment",
+    "Lip Shaping By Fillers",
+    "Hifu Treatment",
+    "Hair Transplant"
+  ];
+
+  const SERVICE_IMAGES = [
+    "https://i.pinimg.com/736x/df/f5/5a/dff55a60415566132f9dab4e4fbf75fa.jpg",
+    "https://i.pinimg.com/736x/95/d8/d9/95d8d9d294d0a5842b2402af7e41a4b1.jpg",
+    "https://i.pinimg.com/736x/30/a9/ab/30a9ab3f69299d09f9fda74514f8456c.jpg",
+    "https://i.pinimg.com/736x/7b/e1/0c/7be10cc5d16c00feca874f00e2e16bfb.jpg",
+    "https://i.pinimg.com/736x/e0/71/f0/e071f0b0a6bd9ee3688f72e03042b011.jpg",
+    "https://i.pinimg.com/736x/10/ae/1c/10ae1c233e031b6e8290bdcd5ee9fbd1.jpg",
+    "https://i.pinimg.com/736x/02/07/f5/0207f596aa4e8bf355045a96fb8f81af.jpg",
+    "https://www.nationalskincentre.in/assets/images/service3.jpg ",
+    "https://i.pinimg.com/736x/ee/27/81/ee27817ee9a24c56e6eedcf27a6f5482.jpg",
+    "https://i.pinimg.com/736x/80/5c/8f/805c8f6bcedd21a0087f31c3d6ab4242.jpg",
+    "https://i.pinimg.com/736x/3a/91/85/3a9185357bcf460986e1e7d3bc038e50.jpg",
+    "https://i.pinimg.com/736x/cf/17/5d/cf175d2341f54c6fad7fd1799bfd7e58.jpg",
+    "https://i.pinimg.com/1200x/8d/0a/83/8d0a83ee14cf6cd5e88867bac29ba3ab.jpg",
+    "https://i.pinimg.com/736x/11/a6/22/11a622d0ad38b4255d474526092d4246.jpg",
+    "https://i.pinimg.com/736x/88/df/5b/88df5b469c5edf87cd605cd397979faf.jpg",
+    "https://i.pinimg.com/1200x/f2/a8/b5/f2a8b59624eadc4f083867a7786bbe77.jpg",
+    "https://i.pinimg.com/1200x/94/16/08/941608f5bd637e37809ded77817938b7.jpg",
+    "https://i.pinimg.com/736x/d2/4f/99/d24f99d8c8a2e1040318de9be29fc7cb.jpg",
+    "https://i.pinimg.com/736x/dc/41/28/dc41289b399367d63af41dfaec5aabcf.jpg",
+    "https://i.pinimg.com/736x/b2/e5/ad/b2e5ad643ed861731c551614844c774a.jpg",
+    "https://i.pinimg.com/736x/dd/e9/e3/dde9e38dc103c67af78b1f217b044f60.jpg"
+  ];
+
+  const defaultPoints = [
+    "Doctor-led consultation and personalized plan",
+    "Safe, clinically proven techniques and devices",
+    "Minimal downtime with aftercare guidance"
+  ];
+
+  const servicesGrid = document.getElementById('servicesGrid');
+  const detailsSection = document.getElementById('detailsSection');
+  const detailTitle = document.getElementById('detailTitle');
+  const detailDesc = document.getElementById('detailDesc');
+  const detailPoints = document.getElementById('detailPoints');
+  const detailImage = document.getElementById('detailImage');
+  const waCta = document.getElementById('waCta');
+  const backToGrid = document.getElementById('backToGrid');
+  const clearSelection = document.getElementById('clearSelection');
+  const WA_NUMBER = "919912985875";
+
+  // Utility: slugify
+  function slugify(str) {
+    return str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  }
+
+  // Build service card
+  function buildCard(name, index) {
+    const card = document.createElement('button');
+    card.type = "button";
+    card.className = "group relative overflow-hidden rounded-lg border border-[color:color-mix(in oklab,var(--neutral-900) 10%,transparent)] bg-white text-left shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus-visible:focus-ring";
+    card.setAttribute('data-service', name);
+    const imgSrc = SERVICE_IMAGES[index] || "/placeholder.svg";
+
+    card.innerHTML = `
+      <img src="${imgSrc}" alt="${name}" class="h-60 w-full object-cover transition group-hover:scale-[1.02]" />
+      <div class="p-4">
+        <h3 class="text-sm font-semibold line-clamp-2">${name}</h3>
+        <p class="mt-1 text-xs text-[var(--neutral-600)]">Tap to view details</p>
+      </div>
+      <span class="pointer-events-none absolute right-3 top-3 inline-flex items-center rounded-full bg-[var(--primary)]/90 px-2 py-0.5 text-[10px] font-medium text-[var(--on-primary)] opacity-90">View</span>
+    `;
+    card.addEventListener('click', () => openDetails(name, imgSrc));
+    return card;
+  }
+
+  // Render grid
+  function renderGrid() {
+    servicesGrid.innerHTML = "";
+    SERVICES.forEach((s, idx) => servicesGrid.appendChild(buildCard(s, idx)));
+  }
+
+  // Open details view
+  function openDetails(name, imgSrc) {
+    detailTitle.textContent = name;
+    detailDesc.textContent = `Comprehensive ${name.toLowerCase()} with modern techniques tailored to your skin profile. Consult our specialist for a personalized plan.`;
+
+    // Points
+    detailPoints.innerHTML = "";
+    defaultPoints.forEach(p => {
+      const li = document.createElement('li');
+      li.textContent = p;
+      detailPoints.appendChild(li);
+    });
+
+    // Image
+    detailImage.src = imgSrc;
+    detailImage.alt = name;
+
+    // WhatsApp link
+    const msg = encodeURIComponent(`Hello, I'm interested in ${name}. Please share details and available slots.`);
+    waCta.href = `https://wa.me/${WA_NUMBER}?text=${msg}`;
+
+    // Show details section
+    detailsSection.classList.remove('hidden');
+    detailsSection.classList.add('animate-fade-in');
+
+    // Update aria-expanded
+    document.querySelectorAll('[data-service]').forEach(el => {
+      el.setAttribute('aria-expanded', String(el.getAttribute('data-service') === name));
+    });
+
+    // Scroll to details
+    detailsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Clear details
+  function clearDetails() {
+    detailsSection.classList.add('hidden');
+    document.querySelectorAll('[data-service]').forEach(el => el.setAttribute('aria-expanded', 'false'));
+  }
+
+  if (backToGrid) backToGrid.addEventListener('click', () => {
+    clearDetails();
+    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  if (clearSelection) clearSelection.addEventListener('click', () => {
+    clearDetails();
+  });
+
+  // Initialize
+  renderGrid();
+  </script>
+</body>
+
+</html>

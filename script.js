@@ -132,7 +132,7 @@ if (typeof Swiper !== "undefined") {
 }
 
 // WhatsApp Helpers
-const WA_NUMBER = "919348148310"; // country code + number (no '+')
+const WA_NUMBER = "919912985875"; // country code + number (no '+')
 
 function toWhatsAppMessage(params) {
   const parts = [];
