@@ -427,7 +427,7 @@
                         </button>
                         <button class="rounded-full border border-neutral-300 px-5 py-3"
                             onclick="openAppointment('General Consultation')">
-                            Know More
+                            Book Appointment
                         </button>
                     </div>
                 </div>
@@ -810,100 +810,98 @@
         </section>
 
 
-        <section id="testimonials" class="bg-accent-peach/50 py-14">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6">
-                <!-- Heading -->
-                <div class="text-center" data-reveal>
-                    <h3 class="text-3xl font-extrabold">What Clients Say</h3>
-                    <p class="mt-2 text-neutral-600">
-                        Real stories & results from <span class="font-semibold text-maroon">National Skin Center</span>
-                        ✨
-                    </p>
-                </div>
+  <section id="testimonials" class="bg-accent-peach/50 py-14">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <!-- Heading -->
+    <div class="text-center" data-reveal>
+      <h3 class="text-3xl font-extrabold">What Clients Say</h3>
+      <p class="mt-2 text-neutral-600">
+        Real stories & results from <span class="font-semibold text-maroon">National Skin Center</span> ✨
+      </p>
+    </div>
 
-                <!-- Testimonials Slider -->
-                <div class="mt-10 overflow-hidden relative">
-                    <div id="ts-wrapper" class="flex gap-6 transition-transform duration-500 ease-out"
-                        style="transform: translateX(0)">
-                        <!-- Card 1 -->
-                        <figure
-                            class="min-w-[320px] flex-1 rounded-2xl bg-white p-6 shadow-soft relative group hover:-translate-y-1 hover:shadow-lg transition-all"
-                            data-reveal>
-                            <i class="ri-double-quotes-l text-4xl text-maroon/20 absolute top-4 left-4"></i>
-                            <blockquote class="mt-6 text-neutral-600 leading-relaxed">
-                                “The Hydrafacial gave my skin the glow I was dreaming of. The staff at National Skin
-                                Center were extremely
-                                professional and explained every step with care. I left feeling refreshed and
-                                confident!”
-                            </blockquote>
-                            <figcaption class="mt-5 flex items-center gap-3">
-                                <span
-                                    class="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-maroon to-pink-400 text-white text-lg font-bold">A</span>
-                                <div>
-                                    <p class="font-semibold text-maroon">Ananya</p>
-                                    <p class="text-sm text-neutral-500">Hyderabad</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-
-                        <!-- Card 2 -->
-                        <figure
-                            class="min-w-[320px] flex-1 rounded-2xl bg-white p-6 shadow-soft relative group hover:-translate-y-1 hover:shadow-lg transition-all"
-                            data-reveal>
-                            <i class="ri-double-quotes-l text-4xl text-maroon/20 absolute top-4 left-4"></i>
-                            <blockquote class="mt-6 text-neutral-600 leading-relaxed">
-                                “My acne scars started fading after just a few sessions. The doctors at National Skin
-                                Center are skilled and
-                                genuinely care for your skin. I highly recommend their services for anyone looking for
-                                real results.”
-                            </blockquote>
-                            <figcaption class="mt-5 flex items-center gap-3">
-                                <span
-                                    class="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-maroon to-pink-400 text-white text-lg font-bold">R</span>
-                                <div>
-                                    <p class="font-semibold text-maroon">Rohit</p>
-                                    <p class="text-sm text-neutral-500">Kukatpally</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-
-                        <!-- Card 3 -->
-                        <figure
-                            class="min-w-[320px] flex-1 rounded-2xl bg-white p-6 shadow-soft relative group hover:-translate-y-1 hover:shadow-lg transition-all"
-                            data-reveal>
-                            <i class="ri-double-quotes-l text-4xl text-maroon/20 absolute top-4 left-4"></i>
-                            <blockquote class="mt-6 text-neutral-600 leading-relaxed">
-                                “I loved how transparent the pricing and guidance were. National Skin Center made me
-                                feel safe and taken care
-                                of at every step. It's rare to find this level of honesty and comfort in a clinic.”
-                            </blockquote>
-                            <figcaption class="mt-5 flex items-center gap-3">
-                                <span
-                                    class="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-maroon to-pink-400 text-white text-lg font-bold">S</span>
-                                <div>
-                                    <p class="font-semibold text-maroon">Sana</p>
-                                    <p class="text-sm text-neutral-500">Gachibowli</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <!-- Slider Controls -->
-                    <div class="mt-8 flex justify-center gap-3">
-                        <button
-                            class="rounded-full bg-white p-3 shadow-soft hover:bg-maroon hover:text-white transition-colors"
-                            onclick="tsPrev()">
-                            <i class="ri-arrow-left-s-line text-xl"></i>
-                        </button>
-                        <button
-                            class="rounded-full bg-white p-3 shadow-soft hover:bg-maroon hover:text-white transition-colors"
-                            onclick="tsNext()">
-                            <i class="ri-arrow-right-s-line text-xl"></i>
-                        </button>
-                    </div>
-                </div>
+    <!-- Testimonials Slider -->
+    <div class="mt-10 overflow-hidden relative">
+      <div id="ts-wrapper" class="flex gap-6 transition-transform duration-500 ease-out" style="transform: translateX(0)">
+        
+        <!-- Card 1 -->
+        <figure
+          class="min-w-[320px] flex-1 rounded-2xl bg-white p-6 shadow-soft relative group hover:-translate-y-1 hover:shadow-lg transition-all"
+          data-reveal>
+          <i class="ri-double-quotes-l text-4xl text-maroon/20 absolute top-4 left-4"></i>
+          <blockquote class="mt-6 text-neutral-600 leading-relaxed" id="text1">
+            One of the best skin and face clinics in Hyderabad. Dr is very good at her work. My family have been visiting
+            this clinic for over a year now — Dr Radhika is a very warm and wonderful person. She gives the best care and
+            advice and only suggests what is beneficial to us.
+          </blockquote>
+          <button class="text-maroon mt-2 text-sm font-medium hover:underline" onclick="toggleMore(1)">Read More</button>
+          <figcaption class="mt-5 flex items-center gap-3">
+            <span
+              class="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-maroon to-pink-400 text-white text-lg font-bold">A</span>
+            <div>
+              <p class="font-semibold text-maroon">Liza</p>
+              <p class="text-sm text-neutral-500">Hyderabad</p>
             </div>
-        </section>
+          </figcaption>
+        </figure>
+
+        <!-- Card 2 -->
+        <figure
+          class="min-w-[320px] flex-1 rounded-2xl bg-white p-6 shadow-soft relative group hover:-translate-y-1 hover:shadow-lg transition-all"
+          data-reveal>
+          <i class="ri-double-quotes-l text-4xl text-maroon/20 absolute top-4 left-4"></i>
+          <blockquote class="mt-6 text-neutral-600 leading-relaxed" id="text2">
+            Dr Radhika is truly an amazing dermatologist. I have been consulting her for 3 years — the results are
+            exceptional for any skin problem, skincare, or treatment. If you’re looking for a good dermatologist, I highly
+            recommend her.
+          </blockquote>
+          <button class="text-maroon mt-2 text-sm font-medium hover:underline" onclick="toggleMore(2)">Read More</button>
+          <figcaption class="mt-5 flex items-center gap-3">
+            <span
+              class="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-maroon to-pink-400 text-white text-lg font-bold">R</span>
+            <div>
+              <p class="font-semibold text-maroon">Sameer</p>
+              <p class="text-sm text-neutral-500">Kukatpally</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Card 3 -->
+        <figure
+          class="min-w-[320px] flex-1 rounded-2xl bg-white p-6 shadow-soft relative group hover:-translate-y-1 hover:shadow-lg transition-all"
+          data-reveal>
+          <i class="ri-double-quotes-l text-4xl text-maroon/20 absolute top-4 left-4"></i>
+          <blockquote class="mt-6 text-neutral-600 leading-relaxed" id="text3">
+            I had visited Dr Radhika for my daughter's mole removal. I'm very much satisfied with the procedure. Doctor did
+            it without causing any discomfort. We're very happy with the outcome — only a small scar left now and it’s
+            fading with the gel doctor prescribed. Truly a trusted dermatologist in Hyderabad.
+          </blockquote>
+          <button class="text-maroon mt-2 text-sm font-medium hover:underline" onclick="toggleMore(3)">Read More</button>
+          <figcaption class="mt-5 flex items-center gap-3">
+            <span
+              class="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-maroon to-pink-400 text-white text-lg font-bold">S</span>
+            <div>
+              <p class="font-semibold text-maroon">praveen</p>
+              <p class="text-sm text-neutral-500">Banjara Hills</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Slider Controls -->
+      <div class="mt-8 flex justify-center gap-3">
+        <button class="rounded-full bg-white p-3 shadow-soft hover:bg-maroon hover:text-white transition-colors"
+          onclick="tsPrev()">
+          <i class="ri-arrow-left-s-line text-xl"></i>
+        </button>
+        <button class="rounded-full bg-white p-3 shadow-soft hover:bg-maroon hover:text-white transition-colors"
+          onclick="tsNext()">
+          <i class="ri-arrow-right-s-line text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
         <section id="faq" class="bg-accent-peach/60 py-14">
             <div class="mx-auto max-w-5xl px-4 sm:px-6">
@@ -1052,8 +1050,8 @@
                                 </div>
                                 <div>
                                     <h3 class="font-semibold text-maroon">Contact</h3>
-                                    <p class="text-maroon/80">Phone: +91 98765 43210<br>Email:
-                                        care@skincareclinic.example</p>
+                                    <p class="text-maroon/80">Phone: 099129 85875<br>Email:
+                                        contact@nationalskincentre.in</p>
                                 </div>
                             </div>
                         </div>
@@ -1184,7 +1182,7 @@
                         </li>
                         <li class="flex items-center text-gray-300">
                             <i class="fas fa-phone text-[#B88172] mr-3"></i>
-                            <span>+91 99129 85875 / +91 88979 90539</span>
+                            <span>099129 85875 / +91 88979 90539</span>
                         </li>
                         <li class="flex items-center text-gray-300">
                             <i class="fas fa-envelope text-[#B88172] mr-3"></i>
@@ -1624,6 +1622,35 @@
         });
 
         lucide.createIcons();
+
+        const fullTexts = {
+    1: `One of the best skin and face clinics in Hyderabad. Dr is very good at her work. My family have been visiting this clinic for over a year now — Dr Radhika is a very warm and wonderful person. She gives the best care and advice and only suggests what is beneficial to us.`,
+    2: `Dr Radhika is truly an amazing dermatologist. I have been consulting her for 3 years — the results are exceptional for any skin problem, skincare, or treatment. If you’re looking for a good dermatologist, I highly recommend her.`,
+    3: `I had visited Dr Radhika for my daughter's mole removal. I'm very much satisfied with the procedure. Doctor did it without causing any discomfort for my daughter. We're very happy with the outcome — only a small scar left now and it’s fading with the gel doctor prescribed. Dr Radhika is a trusted dermatologist in Hyderabad and I recommend her.`
+  };
+
+  const shortTexts = {
+    1: fullTexts[1].slice(0, 160) + "...",
+    2: fullTexts[2].slice(0, 150) + "...",
+    3: fullTexts[3].slice(0, 160) + "..."
+  };
+
+  const states = { 1: false, 2: false, 3: false };
+
+  function toggleMore(id) {
+    const block = document.getElementById(`text${id}`);
+    const btn = block.nextElementSibling;
+    states[id] = !states[id];
+    block.innerText = states[id] ? fullTexts[id] : shortTexts[id];
+    btn.innerText = states[id] ? "Show Less" : "Read More";
+  }
+
+  // Initially shorten all
+  document.addEventListener("DOMContentLoaded", () => {
+    for (let id in shortTexts) {
+      document.getElementById(`text${id}`).innerText = shortTexts[id];
+    }
+  });
 
     </script>
 </body>
