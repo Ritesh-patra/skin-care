@@ -254,7 +254,7 @@
                     <li class="pt-1">
                         <details class="group">
                             <summary class="flex cursor-pointer items-center justify-between py-2">
-                                <span>About Us</span><span class="text-neutral-600 group-open:rotate-180">⌄</span>
+                                <span>About Us</span><i class="ri-arrow-down-s-line ml-1"></i>
                             </summary>
                             <div class="space-y-2 pl-2 border-t border-neutral-100 pt-2">
                                 <a href="#about"
@@ -277,7 +277,9 @@
                     <li class="pt-1">
                         <details class="group">
                             <summary class="flex cursor-pointer items-center justify-between py-2">
-                                <span>Skin Services</span><span class="text-neutral-600 group-open:rotate-180">⌄</span>
+                                <span>Skin Services</span><!-- Arrow down icon -->
+                                <i class="ri-arrow-down-s-line ml-1"></i>
+
                             </summary>
                             <div class="grid grid-cols-2 gap-2 pl-2 border-t border-neutral-100 pt-2">
                                 <a href="#main"
@@ -304,7 +306,7 @@
                     <li class="pt-1">
                         <details class="group">
                             <summary class="flex cursor-pointer items-center justify-between py-2">
-                                <span>Hair Services</span><span class="text-neutral-600 group-open:rotate-180">⌄</span>
+                                <span>Hair Services</span><i class="ri-arrow-down-s-line ml-1"></i>
                             </summary>
                             <div class="space-y-2 pl-2 border-t border-neutral-100 pt-2">
                                 <a href="#main"
@@ -326,8 +328,8 @@
 
                     <li class="pt-1"><a href="#blog" class="block py-3 px-2 hover:bg-accent-peach rounded-md">Blog</a>
                     </li>
-                    <li class="pt-1"><a href="#map"
-                            class="block py-3 px-2 hover:bg-accent-peach rounded-md">Contact</a></li>
+                    <li class="pt-1"><a href="#map" class="block py-3 px-2 hover:bg-accent-peach rounded-md">Contact</a>
+                    </li>
                     <li class="pt-1"><a href="#work" class="block py-3 px-2 hover:bg-accent-peach rounded-md">Our
                             Work</a></li>
                 </ul>
@@ -445,17 +447,6 @@
                         dermatology
                         and aesthetic solutions to help you look and feel your best.
                     </p>
-
-                    <div class="mt-8 grid grid-cols-2 gap-4">
-                        <div class="rounded-xl border border-neutral-200 p-4 shadow-soft">
-                            <p class="text-sm text-neutral-600">USFDA Approved</p>
-                            <p class="mt-1 text-xl font-bold">Equipment</p>
-                        </div>
-                        <div class="rounded-xl border border-neutral-200 p-4 shadow-soft">
-                            <p class="text-sm text-neutral-600">Team of Expert</p>
-                            <p class="mt-1 text-xl font-bold">Dermatologists</p>
-                        </div>
-                    </div>
 
                     <div class="mt-6 flex gap-3">
                         <button class="rounded-full bg-[var(--primary)] px-5 py-3 text-white"
@@ -859,8 +850,7 @@
                 </div>
 
                 <!-- Testimonials Slider -->
-                <div
-                 class="mt-10 overflow-hidden relative">
+                <div class="mt-10 overflow-hidden relative">
                     <div id="ts-wrapper" class="flex gap-6 transition-transform duration-500 ease-out"
                         style="transform: translateX(0)">
 
@@ -1069,8 +1059,8 @@
                                 </div>
                                 <div>
                                     <h3 class="font-semibold text-maroon">Address</h3>
-                                    <p class="text-maroon/80">Radha Swamy Colony, Bowenpally, Secunderabad, Telangana
-                                        500009</p>
+                                    <p class="text-maroon/80">National skin Center, OPP: Corporation Bank Near Diamind
+                                        Point, Sikh Village Secunderabad Telengana 500009</p>
                                 </div>
                             </div>
 
@@ -1085,8 +1075,11 @@
                                 </div>
                                 <div>
                                     <h3 class="font-semibold text-maroon">Hours</h3>
-                                    <p class="text-maroon/80">Mon-Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00
-                                        PM<br>Sun: Closed</p>
+                                    <p class="text-maroon/80">
+                                        Mon–Sat: 10:00 AM – 1:30 PM, 5:00 PM – 9:00 PM<br>
+                                        Sun: Closed
+                                    </p>
+
                                 </div>
                             </div>
 
@@ -1109,8 +1102,9 @@
 
                         <!-- Buttons -->
                         <div class="flex flex-col sm:flex-row gap-4">
+                            <!-- Get Directions Button -->
                             <a href="https://maps.app.goo.gl/CLyaFjii5zwieTVp9" target="_blank"
-                                class="flex items-center justify-center gap-2 bg-maroon text-cream px-6 py-3 rounded-lg hover:bg-maroon/90 transition">
+                                class="flex items-center justify-center gap-2 bg-[#610720]/90 text-white px-6 py-3 rounded-lg hover:bg-[#7a0a2a] transition">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1118,8 +1112,10 @@
                                 </svg>
                                 Get Directions
                             </a>
-                            <a href="tel:+919876543210"
-                                class="flex items-center justify-center gap-2 border border-maroon text-maroon px-6 py-3 rounded-lg hover:bg-maroon/5 transition">
+
+                            <!-- Call Now Button -->
+                            <a href="tel:+918895897892"
+                                class="flex items-center justify-center gap-2 border border-[#610720] text-white bg-[#610720]/90 px-6 py-3 rounded-lg hover:bg-[#610720] transition">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1128,6 +1124,7 @@
                                 Call Now
                             </a>
                         </div>
+
                     </div>
 
                     <!-- Map -->
@@ -1229,7 +1226,8 @@
                     <ul class="space-y-3 text-sm">
                         <li class="flex items-start text-gray-300">
                             <i class="fas fa-map-marker-alt text-[#B88172] mr-3 mt-1"></i>
-                            <span>Radha Swamy Colony, Bowenpally, Secunderabad, Telangana 500009</span>
+                            <span>National skin Center, OPP: Corporation Bank Near Diamind Point, Sikh Village
+                                Secunderabad Telengana 500009</span>
                         </li>
                         <li class="flex items-center text-gray-300">
                             <i class="fas fa-phone text-[#B88172] mr-3"></i>
@@ -1241,7 +1239,8 @@
                         </li>
                         <li class="flex items-center text-gray-300">
                             <i class="fas fa-clock text-[#B88172] mr-3"></i>
-                            <span>Mon–Fri: 9AM–6PM, Sat: 10AM–4PM, Sun: Closed</span>
+                            <span>Mon–Sat: 10:00 AM – 1:30 PM, 5:00 PM – 9:00 PM, Sun: Closed</span>
+
                         </li>
                         <li class="pt-3">
                             <a href="#contact"
@@ -1256,9 +1255,10 @@
 
             <div class="border-t border-[#B88172]/30 pt-8 text-center">
                 <p class="text-gray-400 text-sm">
-                    &copy; <span id="year"></span> National Skin Centre. All rights reserved. | Crafted with care for
-                    healthy skin.
+                    &copy; <span id="year"></span> National Skin Centre. All rights reserved. | Developed by Spider
+                    Innovative Technology.
                 </p>
+
             </div>
         </div>
     </footer>
