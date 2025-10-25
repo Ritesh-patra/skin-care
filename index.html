@@ -799,7 +799,7 @@
             </div>
         </section>
 
-        <section id="work" class="py-14">
+        <section id="work" class="pt-14">
             <div class="mx-auto max-w-7xl px-4 sm:px-6">
                 <div class="text-center" data-reveal>
                     <h3 class="text-3xl font-extrabold">Our Work</h3>
@@ -807,37 +807,42 @@
                 </div>
 
                 <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+
+                     <button class="group focus-ring" onclick="openLightbox('videos/video4face.mp4')">
+                        <video src="videos/video4face.mp4"
+                            class="h-80 w-full rounded-xl object-cover transition group-hover:brightness-110" muted loop
+                            autoplay playsinline></video>
+                    </button>
+
+                          <!-- Example Video 2 -->
+                    <button class="group focus-ring" onclick="openLightbox('video2hand.mp4')">
+                        <video src="videos/video2hand.mp4"
+                            class="h-80 w-full rounded-xl object-cover transition group-hover:brightness-110" muted loop
+                            autoplay playsinline></video>
+                    </button>
+
                     <!-- Example Video 1 -->
-                    <button class="group focus-ring" onclick="openLightbox('videos/video1.mp4')">
+                    <!-- <button class="group focus-ring" onclick="openLightbox('videos/video1.mp4')">
                         <video src="videos/video1.mp4"
                             class="h-80 w-full rounded-xl object-cover transition group-hover:brightness-110" muted loop
                             autoplay playsinline></video>
-                    </button>
+                    </button> -->
 
-                    <!-- Example Video 2 -->
-                    <button class="group focus-ring" onclick="openLightbox('videos/video2.mp4')">
-                        <video src="videos/video2.mp4"
-                            class="h-80 w-full rounded-xl object-cover transition group-hover:brightness-110" muted loop
-                            autoplay playsinline></video>
-                    </button>
+              
 
                     <!-- Example Video 3 -->
-                    <button class="group focus-ring" onclick="openLightbox('videos/video3.mp4')">
+                    <!-- <button class="group focus-ring" onclick="openLightbox('videos/video3.mp4')">
                         <video src="videos/video3.mp4"
                             class="h-80 w-full rounded-xl object-cover transition group-hover:brightness-110" muted loop
                             autoplay playsinline></video>
-                    </button>
-                    <button class="group focus-ring" onclick="openLightbox('videos/video4.mp4')">
-                        <video src="videos/video4.mp4"
-                            class="h-80 w-full rounded-xl object-cover transition group-hover:brightness-110" muted loop
-                            autoplay playsinline></video>
-                    </button>
+                    </button> -->
+                   
 
                 </div>
             </div>
         </section>
 
-        <section id="work" class="py-14">
+        <section id="work" class="">
             <div class="mx-auto max-w-7xl px-4 sm:px-6">
                 <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-3">
                     <!-- Example Image 1 -->
@@ -855,6 +860,26 @@
                     <!-- Example Image 3 -->
                     <button class="group focus-ring" onclick="openLightbox('images/ba3.jpg')">
                         <img src="images/ba3.jpg" alt="Clinic Work 3"
+                            class="h-80 w-full rounded-xl object-cover transition group-hover:brightness-110" />
+                    </button>
+
+                         <!-- Example Image 5 -->
+                    <button class="group focus-ring" onclick="openLightbox('images/ba5.jpg')">
+                        <img src="images/ba5.jpg" alt="Clinic Work 3"
+                            class="h-80 w-full rounded-xl object-cover transition group-hover:brightness-110" />
+                    </button>
+
+                        <!-- Example Image 4 -->
+                    <button class="group focus-ring" onclick="openLightbox('images/ba4.jpg')">
+                        <img src="images/ba4.jpg" alt="Clinic Work 3"
+                            class="h-80 w-full rounded-xl object-cover transition group-hover:brightness-110" />
+                    </button>
+
+                   
+
+                        <!-- Example Image 6+ -->
+                    <button class="group focus-ring" onclick="openLightbox('images/ba6.jpg')">
+                        <img src="images/ba6.jpg" alt="Clinic Work 3"
                             class="h-80 w-full rounded-xl object-cover transition group-hover:brightness-110" />
                     </button>
                 </div>
