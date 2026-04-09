@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Skin Care & Aesthetic Clinic</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: "#9b1b3b",
+                            dark: "#7a152e",
+                            light: "#be2248",
+                            on: "#ffffff",
+                        },
+                        accent: {
+                            peach: "#f6e3db",
+                            sand: "#ede0d4",
+                        },
+                        neutral: {
+                            900: "#111827",
+                            800: "#1f2937",
+                            600: "#4b5563",
+                            400: "#9ca3af",
+                            50: "#f9fafb",
+                        },
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Swiper Adjustments */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: white !important;
+            transform: scale(0.6);
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #9b1b3b !important;
+            width: 24px !important;
+            border-radius: 4px !important;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation underline effect */
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #9b1b3b;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Card Hover Effects */
+        .service-card:hover .service-icon {
+            background-color: #9b1b3b;
+            color: white;
+            transform: rotateY(360deg);
+        }
+
+        .service-icon {
+            transition: all 0.6s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans text-neutral-900 overflow-x-hidden">
+
+    <div class="hidden lg:block bg-brand-primary text-white py-2 text-xs font-semibold tracking-widest">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex space-x-6">
+                <span><i class="fas fa-phone-alt mr-2"></i> +91 98765 43210</span>
+                <span><i class="fas fa-envelope mr-2"></i> info@skinclinic.com</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sticky top-0 z-[100] bg-white/95 backdrop-blur-md shadow-sm border-b border-accent-peach">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+              <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 focus-ring group" aria-label="Clinic home">
+                    <div class="flex items-center gap-1">
+                        <!-- Logo 1 -->
+                        <div class="flex items-center gap-2 z-[99]">
+                            <img src="images/logo1.jpg" alt="Logo 1" class="h-auto w-20 object-contain" />
+                        </div>
+
+                        <!-- Logo 2 -->
+                        <div class="flex items-center gap-2 scale-[1.5]">
+                            <img src="images/logo2.jpg" alt="Logo 2" class="h-auto  w-32 object-contain" />
+                        </div>
+                    </div>
+
+                </a>
+
+            <div class="hidden md:flex space-x-8 font-bold text-xs tracking-widest text-neutral-600">
+                <a href="#home" class="nav-link py-2 text-brand-primary">HOME</a>
+                <a href="#about" class="nav-link py-2">ABOUT</a>
+                <a href="#services" class="nav-link py-2">SERVICES</a>
+                <a href="#doctors" class="nav-link py-2">DOCTORS</a>
+                <a href="#contact" class="nav-link py-2">CONTACT</a>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <section id="home" class="w-full">
+        <div class="swiper heroSwiper h-[45vh] lg:h-[85vh] w-full">
+
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative w-full h-full overflow-hidden">
+
+                    <!-- Image -->
+                    <img src="https://i.pinimg.com/1200x/e1/e4/98/e1e498f27d5096c8a1c771e90a333da1.jpg"
+                        class="absolute inset-0 w-full h-full object-cover" />
+
+                    <!-- Light Overlay -->
+                    <div class="absolute inset-0 bg-transparent"></div>
+
+                    <!-- Content -->
+                    <div class="absolute left-6 md:left-24 top-1/2 -translate-y-1/2 max-w-xl">
+
+                        <h1 class="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
+                            About <br> National Skin Center
+                        </h1>
+
+                        <div class="w-12 h-[3px] bg-red-400 mt-4 mb-4"></div>
+
+                        <p class="text-gray-600 mb-6 max-w-md">
+                            World-class skin care in Hyderabad, backed by 15+ years of expert care.
+                        </p>
+
+                        <button
+                            class="bg-red-400 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-500 transition">
+                            CONSULT NOW
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative w-full h-full overflow-hidden">
+
+                    <img src="images/banner3.png" class="absolute inset-0 w-full h-full object-cover" />
+
+                    <!-- Light Overlay -->
+                    <div class="absolute inset-0 bg-transparent"></div>
+
+                    <div class="absolute left-6 md:left-24 top-1/2 -translate-y-1/2 max-w-xl">
+
+                        <h1 class="text-3xl md:text-5xl font-bold text-black leading-tight">
+                            Advanced Skin <br> Treatments
+                        </h1>
+
+                        <div class="w-12 h-[3px] bg-red-400 mt-4 mb-4"></div>
+
+                        <p class="text-black mb-6 max-w-md">
+                            Safe, effective and modern solutions for glowing healthy skin.
+                        </p>
+
+                        <button class="bg-red-400 text-white px-6 py-3 rounded-full font-semibold">
+                            BOOK APPOINTMENT
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev !hidden md:!flex text-black"></div>
+            <div class="swiper-button-next !hidden md:!flex text-black"></div>
+        </div>
+    </section>
+
+ <section id="about" class="mt-16 overflow-hidden">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+            <div class="grid items-center gap-8 sm:grid-cols-2 lg:gap-12">
+
+                <!-- Left: Image with offset peach panel -->
+                <div class="relative flex items-center justify-center overflow-hidden" data-reveal>
+                    <!-- Offset peach panel -->
+                    <div aria-hidden="true" class="absolute -left-8 -top-8 w-[110%] h-[110%] bg-accent-peach rounded-md"
+                        style="z-index: 0"></div>
+
+                    <!-- Swiper -->
+                    <div class="relative z-10 w-full max-w-[680px]">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="square rounded-md shadow-soft">
+                                        <img src="images/int1.jpg" alt="Dermatology Clinic" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="square rounded-md shadow-soft">
+                                        <img src="images/int2.jpg" alt="Dermatology Clinic" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="square rounded-md shadow-soft">
+                                        <img src="images/int3.jpg" alt="Dermatology Clinic" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="square rounded-md shadow-soft">
+                                        <img src="images/ab5.jpeg" alt="Dermatology Clinic" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="square rounded-md shadow-soft">
+                                        <img src="images/ab2.jpeg" alt="Aesthetic Procedures" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="square rounded-md shadow-soft">
+                                        <img src="images/ab3.jpeg" alt="Laser & Dermatosurgery" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="square rounded-md shadow-soft">
+                                        <img src="images/int4.jpg" alt="Laser & Dermatosurgery" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="square rounded-md shadow-soft">
+                                        <img src="images/int5.jpg" alt="Laser & Dermatosurgery" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="square rounded-md shadow-soft">
+                                        <img src="images/ab1.jpeg" alt="Laser & Dermatosurgery" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="square rounded-md shadow-soft">
+                                        <img src="images/ab5.jpeg" alt="Laser & Dermatosurgery" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination mt-4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div data-reveal class="flex flex-col justify-center">
+
+                    <p class="text-neutral-600 font-semibold tracking-wide">
+                        About Our Clinic
+                    </p>
+
+                    <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold leading-tight text-gray-900">
+                        Dr. Radhika – <br>
+                        <span class="text-[var(--primary)]">Expert Dermatologist</span>
+                    </h2>
+
+                    <div
+                        class="mt-6 space-y-5 text-neutral-600 text-base sm:text-lg text-justify leading-relaxed max-w-[620px]">
+
+                        <p>
+                            Dr. Radhika is an accomplished and trusted dermatologist with over 20 years of clinical
+                            experience in medical and cosmetic dermatology. She is a distinguished gold medalist known
+                            for her precision, knowledge, and commitment to excellence in skin, hair, and aesthetic
+                            treatments.
+                        </p>
+
+                        <p>
+                            She is widely appreciated for her patient-focused approach, accurate diagnosis, and ability
+                            to provide personalized treatment plans tailored to each individual’s skin needs.
+                        </p>
+
+                        <p>
+                            Our clinic is equipped with state-of-the-art technology and follows the highest standards of
+                            safety and care. With over two decades of experience, we are committed to delivering
+                            effective and reliable dermatological solutions.
+                        </p>
+
+                        <p>
+                            From advanced laser treatments to customized skincare solutions, every procedure is designed
+                            to provide safe, natural-looking, and long-lasting results—helping patients achieve healthy,
+                            radiant, and confident skin.
+                        </p>
+
+                        <p>
+                            With a strong reputation built on trust and excellence, our clinic continues to be a
+                            preferred destination for advanced skin and hair treatments.
+                        </p>
+
+                    </div>
+
+                    <div class="mt-7 flex flex-wrap gap-3">
+
+                        <button
+                            class="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-6 py-3 text-white font-semibold shadow-md hover:opacity-90 active:scale-95 transition-all duration-200"
+                            onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">
+                            Our Work
+                        </button>
+
+                        <button
+                            class="rounded-full border border-gray-300 px-6 py-3 font-semibold text-gray-700 bg-white shadow-sm hover:border-pink-500 hover:text-pink-500 active:scale-95 transition-all duration-200"
+                            onclick="openAppointment('General Consultation')">
+                            Book Appointment
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="doctors" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div class="space-y-4">
+                <span class="text-brand-primary font-bold tracking-[0.3em] uppercase text-xs">Our Specialists</span>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-neutral-900 leading-tight">Meet Our Experts
+                </h2>
+            </div>
+            <p class="max-w-md text-neutral-600">Our team consists of board-certified dermatologists and licensed
+                aestheticians committed to your skin's health.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="group">
+                <div class="relative overflow-hidden rounded-[2.5rem] mb-6 shadow-xl aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71f1536783?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                        alt="Doctor" />
+                    <div
+                        class="absolute bottom-6 left-6 right-6 p-6 bg-white/90 backdrop-blur-md rounded-3xl translate-y-24 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-center space-x-4 text-brand-primary">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-2xl font-serif font-bold">Dr. Sarah Jenkins</h4>
+                    <p class="text-brand-primary font-bold tracking-widest text-xs uppercase mt-2">Senior Dermatologist
+                    </p>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="relative overflow-hidden rounded-[2.5rem] mb-6 shadow-xl aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                        alt="Doctor" />
+                    <div
+                        class="absolute bottom-6 left-6 right-6 p-6 bg-white/90 backdrop-blur-md rounded-3xl translate-y-24 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-center space-x-4 text-brand-primary">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-2xl font-serif font-bold">Dr. Marcus Thorne</h4>
+                    <p class="text-brand-primary font-bold tracking-widest text-xs uppercase mt-2">Cosmetic Surgeon</p>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="relative overflow-hidden rounded-[2.5rem] mb-6 shadow-xl aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                        alt="Doctor" />
+                    <div
+                        class="absolute bottom-6 left-6 right-6 p-6 bg-white/90 backdrop-blur-md rounded-3xl translate-y-24 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-center space-x-4 text-brand-primary">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-2xl font-serif font-bold">Dr. Elena Rodriguez</h4>
+                    <p class="text-brand-primary font-bold tracking-widest text-xs uppercase mt-2">Aesthetic Specialist
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-neutral-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-brand-primary/10 skew-x-12 translate-x-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div>
+                <span
+                    class="text-brand-primary font-bold tracking-[0.3em] uppercase text-xs mb-4 inline-block">Consultation</span>
+                <h2 class="text-5xl md:text-6xl font-serif font-bold mb-8">Ready to Glow? <br> Book Now.</h2>
+                <p class="text-neutral-400 text-lg mb-12">Take the first step towards your dream skin. Fill out the form
+                    and our team will get back to you within 24 hours.</p>
+
+                <div class="space-y-8">
+                    <div class="flex items-center space-x-6">
+                        <div
+                            class="w-14 h-14 border border-brand-primary flex items-center justify-center rounded-full text-brand-primary text-xl">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-lg">Main Clinic Address</h5>
+                            <p class="text-neutral-400">123, Aesthetic Plaza, Jubilee Hills, Hyderabad.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-6">
+                        <div
+                            class="w-14 h-14 border border-brand-primary flex items-center justify-center rounded-full text-brand-primary text-xl">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-lg">Working Hours</h5>
+                            <p class="text-neutral-400">Mon - Sat: 10:00 AM - 08:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-10 rounded-[3rem] shadow-2xl">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Your Name"
+                            class="w-full bg-neutral-50 border border-accent-peach px-6 py-4 rounded-2xl text-neutral-900 focus:outline-none focus:border-brand-primary transition-all">
+                        <input type="email" placeholder="Email Address"
+                            class="w-full bg-neutral-50 border border-accent-peach px-6 py-4 rounded-2xl text-neutral-900 focus:outline-none focus:border-brand-primary transition-all">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="tel" placeholder="Phone Number"
+                            class="w-full bg-neutral-50 border border-accent-peach px-6 py-4 rounded-2xl text-neutral-900 focus:outline-none focus:border-brand-primary transition-all">
+                        <select
+                            class="w-full bg-neutral-50 border border-accent-peach px-6 py-4 rounded-2xl text-neutral-600 focus:outline-none focus:border-brand-primary transition-all">
+                            <option>Select Treatment</option>
+                            <option>Anti-Aging</option>
+                            <option>Laser Care</option>
+                            <option>Acne Treatment</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="Tell us about your concern" rows="4"
+                        class="w-full bg-neutral-50 border border-accent-peach px-6 py-4 rounded-2xl text-neutral-900 focus:outline-none focus:border-brand-primary transition-all"></textarea>
+                    <button
+                        class="w-full bg-brand-primary text-white py-5 rounded-2xl font-bold tracking-widest uppercase hover:bg-brand-dark transition-all shadow-xl">
+                        CONFIRM APPOINTMENT
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-950 text-white pt-20 pb-10">
+        <div
+            class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-neutral-800 pb-20">
+            <div class="space-y-6">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-serif text-xl font-bold">S</span>
+                    </div>
+                    <span class="text-2xl font-serif font-bold tracking-tight uppercase">SkinClinic</span>
+                </div>
+                <p class="text-neutral-500 leading-relaxed">Dedicated to providing the highest quality dermatological
+                    and aesthetic care with a focus on safety and personalized service.</p>
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="w-10 h-10 bg-neutral-800 flex items-center justify-center rounded-full hover:bg-brand-primary transition-all"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 bg-neutral-800 flex items-center justify-center rounded-full hover:bg-brand-primary transition-all"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 bg-neutral-800 flex items-center justify-center rounded-full hover:bg-brand-primary transition-all"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-8 uppercase tracking-widest">Quick Links</h4>
+                <ul class="space-y-4 text-neutral-500 font-semibold">
+                    <li><a href="#" class="hover:text-brand-primary transition-all">Clinical Services</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-all">Aesthetic Care</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-all">Latest Technology</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-all">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-8 uppercase tracking-widest">Treatments</h4>
+                <ul class="space-y-4 text-neutral-500 font-semibold">
+                    <li><a href="#" class="hover:text-brand-primary transition-all">Acne Treatment</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-all">Laser Hair Removal</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-all">Botox & Fillers</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-all">Skin Whitening</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-8 uppercase tracking-widest">Newsletter</h4>
+                <p class="text-neutral-500 mb-6">Subscribe to get skin care tips and exclusive offers.</p>
+                <div class="flex bg-neutral-800 p-1 rounded-xl">
+                    <input type="email" placeholder="Email" class="bg-transparent px-4 py-2 w-full focus:outline-none">
+                    <button class="bg-brand-primary px-6 py-2 rounded-lg font-bold">JOIN</button>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:row justify-between items-center gap-6 text-neutral-600 text-xs font-bold tracking-widest uppercase">
+            <p>&copy; 2026 Advanced Skin Care Clinic. All Rights Reserved.</p>
+            <div class="flex space-x-6">
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".heroSwiper", {
+            loop: true,
+            speed: 1000,
+            effect: "fade",
+            fadeEffect: { crossFade: true },
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // Simple Reveal on Scroll Animation
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.service-card, .group');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('animate-fade-in-up');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

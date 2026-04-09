@@ -183,14 +183,36 @@
         .square {
             position: relative;
             width: 100%;
-            padding-top: 100%; /* 1:1 aspect ratio */
+            padding-top: 100%;
+            /* 1:1 aspect ratio */
             overflow: hidden;
         }
 
         .square img {
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
+        }
+
+        /* Arrows white */
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #fff;
+        }
+
+        /* Pagination dots white */
+        .swiper-pagination-bullet {
+            background: #fff;
+            opacity: 0.7;
+        }
+
+        /* Active dot */
+        .swiper-pagination-bullet-active {
+            background: #fff;
+            opacity: 1;
         }
     </style>
 </head>
@@ -426,53 +448,44 @@
 
     </header>
 
-    <section id="hero" class="relative px-0 overflow-hidden bg-white w-full" aria-label="Featured promotions">
-        <div class="relative">
-            <div id="hero-slides"
-                class="relative aspect-[16/10] sm:aspect-[16/6] w-screen overflow-hidden rounded-none">
-                <div class="absolute inset-0 w-screen transition-transform duration-500 ease-out" data-slide-index="0">
+    <section id="hero" class="relative overflow-hidden bg-white w-full">
+
+        <div class="swiper heroSwiper w-full h-[35vh] sm:h-[45vh] md:h-[70vh]">
+
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide w-full h-full">
                     <img src="https://i.pinimg.com/1200x/24/51/27/2451277bfcba967b2af87eeefa438d19.jpg"
-                        alt="Hydrafacial promotion" class="h-full w-screen object-cover object-contain" />
-
+                        class="w-full h-full object-cover" />
                 </div>
-                <div class="absolute inset-0 translate-x-full transition-transform duration-500 ease-out"
-                    data-slide-index="1">
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide w-full h-full">
                     <img src="https://i.pinimg.com/1200x/76/06/9e/76069e64e19cac2e1fce719359a07fb4.jpg"
-                        alt="Services collage" class="h-full w-screen object-cover" />
+                        class="w-full h-full object-cover" />
                 </div>
-                <div class="absolute inset-0 translate-x-full transition-transform duration-500 ease-out"
-                    data-slide-index="2">
-                    <img src="images/banner3.png" alt="Clinic lobby" class="h-full w-screen object-cover" />
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide w-full h-full">
+                    <img src="https://i.pinimg.com/1200x/99/f0/3b/99f03b73145d8f427b84bc52a80f66e9.jpg"
+                        class="w-full h-full object-cover" />
                 </div>
-                <div class="absolute inset-0 translate-x-full transition-transform duration-500 ease-out"
-                    data-slide-index="3">
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide w-full h-full">
                     <img src="https://i.pinimg.com/1200x/2a/29/74/2a297420c0ed54a529e221ad4365a006.jpg"
-                        alt="Clinic lobby" class="h-full w-screen object-cover" />
+                        class="w-full h-full object-cover" />
                 </div>
 
-                <button id="hero-prev"
-                    class="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-3 shadow-soft hover:bg-white focus-ring"
-                    aria-label="Previous slide">
-                    <span aria-hidden="true"><i class="ri-arrow-left-wide-line text-3xl"></i></span>
-                </button>
-                <button id="hero-next"
-                    class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-3 shadow-soft hover:bg-white focus-ring"
-                    aria-label="Next slide">
-                    <span aria-hidden="true"><i class="ri-arrow-right-wide-fill text-3xl"></i></span>
-                </button>
-
-                <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2" role="tablist"
-                    aria-label="Hero slides">
-                    <button class="h-2.5 w-2.5 rounded-full bg-neutral-900/80" aria-label="Slide 1"
-                        data-hero-dot="0"></button>
-                    <button class="h-2.5 w-2.5 rounded-full bg-neutral-900/40" aria-label="Slide 2"
-                        data-hero-dot="1"></button>
-                    <button class="h-2.5 w-2.5 rounded-full bg-neutral-900/40" aria-label="Slide 3"
-                        data-hero-dot="2"></button>
-                </div>
             </div>
-        </div>
 
+            <!-- Controls -->
+            <div class="swiper-pagination text-white"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
 
     </section>
 
@@ -495,17 +508,17 @@
                                         <img src="images/int1.jpg" alt="Dermatology Clinic" />
                                     </div>
                                 </div>
-                                  <div class="swiper-slide">
+                                <div class="swiper-slide">
                                     <div class="square rounded-md shadow-soft">
                                         <img src="images/int2.jpg" alt="Dermatology Clinic" />
                                     </div>
                                 </div>
-                                  <div class="swiper-slide">
+                                <div class="swiper-slide">
                                     <div class="square rounded-md shadow-soft">
                                         <img src="images/int3.jpg" alt="Dermatology Clinic" />
                                     </div>
                                 </div>
-                                  <div class="swiper-slide">
+                                <div class="swiper-slide">
                                     <div class="square rounded-md shadow-soft">
                                         <img src="images/ab5.jpeg" alt="Dermatology Clinic" />
                                     </div>
@@ -535,7 +548,7 @@
                                         <img src="images/ab1.jpeg" alt="Laser & Dermatosurgery" />
                                     </div>
                                 </div>
-                                   <div class="swiper-slide">
+                                <div class="swiper-slide">
                                     <div class="square rounded-md shadow-soft">
                                         <img src="images/ab5.jpeg" alt="Laser & Dermatosurgery" />
                                     </div>
@@ -1716,40 +1729,15 @@
             });
         });
 
-        // Hero Slider
-        let currentSlide = 0;
-        const heroSlides = $$("#hero [data-slide-index]");
-        const totalSlides = heroSlides.length;
-        const heroPrev = $("#hero-prev");
-        const heroNext = $("#hero-next");
-        const heroDots = $$("[data-hero-dot]");
-
-        function showSlide(i) {
-            if (totalSlides === 0) return;
-            currentSlide = (i + totalSlides) % totalSlides;
-            heroSlides.forEach((el, idx) => {
-                el.style.transform =
-                    idx < currentSlide
-                        ? "translateX(-100%)"
-                        : idx === currentSlide
-                            ? "translateX(0)"
-                            : "translateX(100%)";
+        // Hero Slider (Swiper)
+        if (typeof Swiper !== 'undefined') {
+            new Swiper('.heroSwiper', {
+                loop: true,
+                autoplay: { delay: 6000, disableOnInteraction: false },
+                pagination: { el: '.heroSwiper .swiper-pagination', clickable: true },
+                navigation: { nextEl: '.heroSwiper .swiper-button-next', prevEl: '.heroSwiper .swiper-button-prev' },
+                effect: 'slide',
             });
-            heroDots.forEach((d, idx) => {
-                d.className =
-                    "h-2.5 w-2.5 rounded-full " +
-                    (idx === currentSlide ? "bg-neutral-900/80" : "bg-neutral-900/40");
-            });
-        }
-
-        if (heroPrev) heroPrev.addEventListener("click", () => showSlide(currentSlide - 1));
-        if (heroNext) heroNext.addEventListener("click", () => showSlide(currentSlide + 1));
-        heroDots.forEach((dot) =>
-            dot.addEventListener("click", () => showSlide(parseInt(dot.dataset.heroDot)))
-        );
-        if (totalSlides > 0) {
-            setInterval(() => showSlide(currentSlide + 1), 6000);
-            showSlide(0);
         }
 
         // Testimonials Carousel
